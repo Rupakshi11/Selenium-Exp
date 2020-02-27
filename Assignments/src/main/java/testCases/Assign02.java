@@ -38,17 +38,18 @@ public class Assign02 {
 		Month.selectByIndex(4);
 		Select Day = new Select(driver.findElement(By.id("day")));
 		Day.selectByIndex(11);
-		/*
-		 * Select Year= new Select(driver.findElement(By.id("year")));
-		 * Day.selectByValue("1990");
-		 */
-		WebElement Gender = driver.findElement(By.id("u_0_9"));
+
+		Select Year = new Select(driver.findElement(By.name("birthday_year")));
+		Year.selectByValue("1990");
+
+		WebElement Gender = driver.findElement(By.xpath("//*[@id=\"u_0_6\"]"));
 		Gender.click();
 		driver.findElement(By.name("websubmit")).click();
 	}
 
-	/*
-	 * @AfterTest public void browser() { driver.quit(); }
-	 */
+	@AfterTest
+	public void browser() {
+		driver.quit();
+	}
 
 }
