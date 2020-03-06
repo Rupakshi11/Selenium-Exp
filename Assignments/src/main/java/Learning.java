@@ -38,7 +38,9 @@ public class Learning {
 				return true;
 			}
 		}).forEach(a->System.out.println(a));
-		
+		/*
+		 * Array, List --> ArrayList, LinkedList Set -> HashSet, LinkedHashSet Map ->
+		 */
 		
 		
 		
