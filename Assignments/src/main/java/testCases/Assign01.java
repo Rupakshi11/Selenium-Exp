@@ -15,13 +15,13 @@ public class Assign01 {
 	@BeforeTest
 	public void launchBrowser() {
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\Softwares\\Executables\\chromedriver_win32\\chromedriver.exe");
+				"D:\\Softwares\\Executables\\chromedriver_win32 (1)\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("http://qatechhub.com");
 		driver.manage().window().maximize();
 	}
 
-	@Test
+	@Test()
 	public void valiation() {
 
 		// driver = new ChromeDriver();

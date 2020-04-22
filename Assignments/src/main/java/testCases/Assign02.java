@@ -19,7 +19,7 @@ public class Assign02 {
 	public void fblogin() {
 
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\Softwares\\Executables\\chromedriver_win32\\chromedriver.exe");
+				"D:\\Softwares\\Executables\\chromedriver_win32 (1)\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
